@@ -1,0 +1,52 @@
+class Übung1:
+    def __init__(self, übungnr, ichwillnichtmehr):
+        self.übungnr = übungnr
+        self.ichwillnichtmehr = ichwillnichtmehr
+        self.liste = []
+        
+    def aufrufen (self):
+        if self.übungnr == 1:
+            print ("alles top")
+        else:
+            print ("Es stimmt was nicht")
+        
+    def noterechnen (self, note):
+        self.note = note
+        
+        if self.note >= 4:
+            print ("Du warst zu schlecht") 
+        else: 
+            print (self.note)
+            
+    def listeerweitern(self, neuezahl):
+        self.zahl = neuezahl
+        if self.zahl >= 5:
+            self.liste.append(neuezahl)
+            print(self.liste)
+            
+        else:                                                                                    
+            print ("so nicht")   
+        
+class andereKlasse:
+    def __init__(self, buchstabeneu = "a"):
+        self.buchstabe = buchstabeneu
+        self.liste = []
+        
+    def machwas(self, newzahl):
+        self.zahlen = newzahl
+        self.liste.append(newzahl)
+        print(self.liste)
+        
+erstezahl = andereKlasse ("b")
+erstezahl.machwas(55)
+zweitezahl = andereKlasse("c")
+zweitezahl.machwas("v")
+#print(erstezahl.liste)
+        
+'''erstenummer = Übung1 (3, "Mach weiter")
+#erstenummer.noterechnen(3)
+erstenummer.listeerweitern(3)
+zweitenummer = Übung1(7, "Toll")
+zweitenummer.listeerweitern(8)
+drittenummer = Übung1 (9, "Super")
+drittenummer.listeerweitern(9)'''
